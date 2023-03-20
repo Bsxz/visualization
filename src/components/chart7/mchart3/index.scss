@@ -1,0 +1,13 @@
+@import 'src/shared/helper';
+
+.minbordered {
+  display: flex;
+  flex-direction: column;
+  padding: 0 px(20);
+  margin-left: px(30);
+  height: px(260);
+}
+
+.bottom {
+  margin-top: 0;
+}

@@ -30,7 +30,7 @@
       position: relative;
       box-shadow: 0 0 2px 0 #0f3361, inset 0 0 2px #0f3361;
 
-      &::after {
+      &::before {
         content: '';
         position: absolute;
         top: 0;
@@ -57,7 +57,7 @@
 
     h4 {
       width: fit-content;
-      color: #d7e8ff;
+      color: #d9eaff;
       font-size: px(22);
       padding: px(10) px(28);
       margin: 0 auto;
@@ -153,14 +153,23 @@
 
     > .section5 {
       grid-area: box5;
-
+      overflow: hidden;
       > .top {
-        height: px(300);
+        min-height: px(300);
       }
 
       > .middle {
-        height: px(320);
+        display: flex;
+        flex-direction: column;
+        min-height: px(320);
         margin-top: px(28);
+      }
+      > .bottom {
+        min-height: px(320);
+        .tab {
+          margin-top: 0;
+          font-size: px(10);
+        }
       }
     }
   }

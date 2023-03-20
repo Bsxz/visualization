@@ -1,0 +1,45 @@
+@import "../src/shared/_helper";
+@import "../src/pages/home";
+
+.map {
+  margin-top: px(60);
+}
+.xxx {
+  position: absolute;
+  right: px(40);
+  bottom: px(20);
+}
+.box {
+  bottom: px(580);
+  left: px(40);
+  width: px(300);
+  padding: px(10) px(15);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: px(100);
+      margin-left: px(20);
+
+      span {
+        display: inline-block;
+        margin: 0 px(10) px(2) 0;
+        width: px(10);
+        height: px(10);
+        border-radius: 50%;
+        background-color: #16b1fd;
+
+      }
+
+      &:nth-of-type(2) span {
+        background-color: #1ff2d3;
+      }
+
+      &:nth-of-type(3) span {
+        background-color: #bb39fe;
+      }
+    }
+  }
+}

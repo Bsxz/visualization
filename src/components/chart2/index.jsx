@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from "react";
 import {px, echarts} from "../../shared/base-echarts-options";
 
-export const Solve = () => {
+export const Chart2 = () => {
     const divRef = useRef(null)
     useEffect(() => {
             echarts.init(divRef.current).setOption({
